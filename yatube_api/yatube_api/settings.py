@@ -97,11 +97,13 @@ REST_FRAMEWORK = {
     ],
 }
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ((BASE_DIR / 'static/'),)
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
